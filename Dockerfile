@@ -16,7 +16,7 @@ FROM nginx:1.27-alpine AS runtime
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-COPY --from=build /app/dist/Frontend-Proyecto/browser /usr/share/nginx/html
+COPY --from=build /app/dist/clase30-10/browser /usr/share/nginx/html
 
 EXPOSE 80
 
